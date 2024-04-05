@@ -125,7 +125,7 @@ MOUSEFLAG	DW	0		; Is mouse device driver presented
 MOUSEDD		DB	'MOUSE$', 0	; Mouse device driver name
 BMSCALLS	DB	'BMSCALLS', 0	; Base Mouse Subsystem filename
 BMSMAIN		DB	'BMSMAIN', 0	; Base Mouse Subsystem BMSMAIN name
-BMSPROC		DD	?		; Base Mouse Subsystem BMSMAIN address
+BMSPROC		DD	BMSMAIN		; Base Mouse Subsystem BMSMAIN address
 BMSHANDLE	DW	?		; Base Mouse Subsystem handle
 
 SHELL_PID	DW	?		; PID of session manager/shell. Used by MouFree to prevent non-sesmgs call.
